@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Berlin Clock</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+<body>
+<aside class="description">
+    <h1 class="description__header">Berlin clock</h1>
+
+    <p class="description__info">На экране вы видите «<a href="https://en.wikipedia.org/wiki/Mengenlehreuhr"
+                                                         target="_blank">Берлинские
+        часы</a>», которые показывают время с помощью математической теории.
+    </p>
+    <p class="description__info"> В 1975 году немецкий часовой мастер Дитер
+        Биннигер разработал часы теорий множества (нем. <code>Mengenlehreuhr</code>). «Берлинские часы» стали первыми
+        публичными цифровыми часами. В книгу
+        рекордов Гиннеса эти часы попали благодаря тому, что в них соединены принципы теории множеств и световые
+        сигналы. За счет этого достигается эффект визуализации течения времени.
+    </p>
+    <p class="description__info">Итак, на часах видно 24 светящихся индикатора, разделенные на пять рядов:
+    </p>
+    <ul>
+        <li class="description__info">В верхнем ряду находится только 1 индикатор, который показывает секунды
+        </li>
+        <li class="description__info">Второй и третий ряды индикаторов показывают часы</li>
+        <li class="description__info">Четвертый и пятый ряды — минуты</li>
+    </ul>
+    <p class="description__info">
+        Верхний индикатор мигает каждые 2 секунды.
+        Во второй линии 4 индикатора, каждый из которых представляет 4 часа. В третьей линии
+        четыре индикатора означают часовые промежутки. Четвертая линия показывает промежутки времени по 5 минут,
+        а пятая — по минуте.
+    </p>
+</aside>
+<main class="content">
+    <section id="timezone1" class="clock">
+        <div class="clock__seconds line1"></div>
+        <div class="clock__row line2">
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+        </div>
+        <div class="clock__row line3">
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+        </div>
+        <div class="clock__row line4">
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+        </div>
+        <div class="clock__row line5">
+            <div class="clock__minutes-additional"></div>
+            <div class="clock__minutes-additional"></div>
+            <div class="clock__minutes-additional"></div>
+            <div class="clock__minutes-additional"></div>
+        </div>
+        <div class="time">
+            <div class="time__timezone"></div>
+            <div class="time__clock">loading...</div>
+        </div>
+    </section>
+    <section id="timezone2" class="clock">
+        <div class="clock__seconds line1"></div>
+        <div class="clock__row line2">
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+        </div>
+        <div class="clock__row line3">
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+        </div>
+        <div class="clock__row line4">
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+        </div>
+        <div class="clock__row line5">
+            <div class="clock__minutes-additional"></div>
+            <div class="clock__minutes-additional"></div>
+            <div class="clock__minutes-additional"></div>
+            <div class="clock__minutes-additional"></div>
+        </div>
+        <div class="time">
+            <div class="time__timezone"></div>
+            <div class="time__clock">loading...</div>
+        </div>
+    </section>
+    <section id="timezone3" class="clock">
+        <div class="clock__seconds line1"></div>
+        <div class="clock__row line2">
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+        </div>
+        <div class="clock__row line3">
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+        </div>
+        <div class="clock__row line4">
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+        </div>
+        <div class="clock__row line5">
+            <div class="clock__minutes-additional"></div>
+            <div class="clock__minutes-additional"></div>
+            <div class="clock__minutes-additional"></div>
+            <div class="clock__minutes-additional"></div>
+        </div>
+        <div class="time">
+            <div class="time__timezone"></div>
+            <div class="time__clock">loading...</div>
+        </div>
+    </section>
+    <section id="timezone4" class="clock">
+        <div class="clock__seconds line1"></div>
+        <div class="clock__row line2">
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+        </div>
+        <div class="clock__row line3">
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+            <div class="clock__hours"></div>
+        </div>
+        <div class="clock__row line4">
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+            <div class="clock__minutes"></div>
+        </div>
+        <div class="clock__row line5">
+            <div class="clock__minutes-additional"></div>
+            <div class="clock__minutes-additional"></div>
+            <div class="clock__minutes-additional"></div>
+            <div class="clock__minutes-additional"></div>
+        </div>
+        <div class="time">
+            <div class="time__timezone"></div>
+            <div class="time__clock">loading...</div>
+        </div>
+    </section>
+</main>
+<script src="scripts/main.js"></script>
+</body>
+</html>
